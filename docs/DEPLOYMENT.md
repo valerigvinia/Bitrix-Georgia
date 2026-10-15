@@ -6,6 +6,15 @@ Vercel სამიზნე გუნდი: Portfolio (`valerigvinias-projects
 Root directory: repository root. Framework: Next.js. Node: 24.x.
 Install: `npm ci`; Build: `npm run build`; Output: Next.js default.
 
+## მიმდინარე შედეგი — 2026-10-15
+- საწყისი კოდი ატვირთულია GitHub main-ზე; საწყისი commit: `a6226d0`.
+- ლოკალური build/typecheck და GitHub Actions Check წარმატებით დასრულდა: https://github.com/valerigvinia/Bitrix-Georgia/actions/runs/38789459577
+- Vercel-ის create_git_project დაბრუნდა 403 forbidden-ით: დაკავშირებულ ინტეგრაციას პროექტის შექმნის უფლება არ აქვს.
+- CLI 64.2.0 შემოწმებამ დააბრუნა არავალიდური VERCEL_TOKEN. ტოკენი არ გამოქვეყნებულა და არ შეცვლილა.
+- პროექტი/დეპლოი არ დადასტურებულა; preview URL ჯერ არ არსებობს.
+- გასაგრძელებლად საჭიროა Vercel-ზე პროექტის შექმნის უფლებამოსილი კავშირი ან მოქმედი CLI ავტორიზაცია. შემდეგ import: valerigvinia/Bitrix-Georgia → Portfolio → bitrix-georgia, framework Next.js, root repository root. დომენი არ დაემატოს ამ ეტაპზე.
+- ვიზუალური browser QA ჯერ არ ჩატარებულა; production build შემოწმებულია.
+
 ## სამუშაო გზა
 1. ადგილობრივი ცვლილება → თემატური branch.
 2. `npm run build` და `npm run typecheck`.
